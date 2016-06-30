@@ -1,0 +1,129 @@
+<html>
+<head>
+  <title>Army Simulation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div id="wrapper">
+    <div id="navbar">
+      <a href="#picker" id="picker"><button>Picker</button></a>
+      <a href="#battle" id="battle"><button>Battle</button></a>
+      <a href="#score" id="score"><button>Score</button></a>
+    </div>
+
+    <div id="picker_content">
+      <div id="picker_header">
+        <h3>Pick your army!</h3>
+      </div>
+      <div id="picker">
+        <a href="#" id="Infantry"><button>Infantry</button></a>
+        <a href="#" id="Cavalry"><button>Cavalry</button></a>
+        <a href="#" id="Ranged"><button>Ranged</button></a>
+      </div>
+      <div id="units">
+        <div id="unit1">
+          unit 1
+        </div>
+        <div id="unit2">
+          unit 2
+        </div>
+        <div id="unit3">
+          unit 3
+        </div>
+        <div id="unit4">
+          unit 4
+        </div>
+        <div id="unit5">
+          unit 5
+        </div>
+      </div>
+    </div>
+
+    <div id="battle_content">
+      <div id="battle_header">
+        <h3 id="battle_header_text">Battle the opponent!</h3>
+        <button id="prepare_button">Prepare for battle!</button>
+      </div>
+      <div id="p1_fighting_unit">
+      </div>
+      <div id="p2_fighting_unit">
+      </div>
+      <div id="button_row">
+        <button id="fight_button">Fight!</button>
+      </div>
+      <div id="units_p1">
+        <h5>Your units</h5>
+        <div id="p1_unit1">
+          unit 1
+        </div>
+        <div id="p1_unit2">
+          unit 2
+        </div>
+        <div id="p1_unit3">
+          unit 3
+        </div>
+        <div id="p1_unit4">
+          unit 4
+        </div>
+        <div id="p1_unit5">
+          unit 5
+        </div>
+      </div>
+      <div id="units_p2">
+        <h5>Opponents units</h5>
+        <div id="p2_unit1">
+          unit 1
+        </div>
+        <div id="p2_unit2">
+          unit 2
+        </div>
+        <div id="p2_unit3">
+          unit 3
+        </div>
+        <div id="p2_unit4">
+          unit 4
+        </div>
+        <div id="p2_unit5">
+          unit 5
+        </div>
+      </div>
+    </div>
+
+    <div id="score_content">
+      <div id="finalScore">
+        Finish a game to see your final score!
+      </div>
+    </div>
+  </div>
+
+<!-- dependencies -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="underscore-min.js"></script>
+<script type="text/javascript" src="backbone-min.js"></script>
+
+<!-- init -->
+<script src="dist/init.js"></script>
+
+<!-- models -->
+<script src="dist/models/UnitModel.js"></script>
+<script src="dist/models/InfantryModel.js"></script>
+<script src="dist/models/RangedModel.js"></script>
+<script src="dist/models/CavalryModel.js"></script>
+
+<!-- collections -->
+<script src="dist/collections/UnitCollection.js"></script>
+
+<!-- views -->
+<script src="dist/views/PickerView.js"></script>
+<script src="dist/views/BattleView.js"></script>
+<script src="dist/views/ScoreView.js"></script>
+
+<!-- routers -->
+<script src="dist/routers/AppRouter.js"></script>
+
+<!-- main -->
+<script src="dist/main.js"></script>
+
+</body>
+</html>
